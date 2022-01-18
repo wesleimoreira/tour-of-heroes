@@ -4,8 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
-import { HeroesModule } from './heroes/heroes.module';
-import { DashboardModule } from './dashboard/dashboard.module';
+import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -13,9 +12,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     CoreModule,
     FormsModule,
-    HeroesModule,
     BrowserModule,
-    DashboardModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
   ],
   providers: [],

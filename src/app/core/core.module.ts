@@ -1,13 +1,14 @@
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { AppRoutingModule } from '../app-routing.module';
 import { MaterialModule } from '../material/material.module';
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { MessagesComponent } from './components/messages/messages.component';
+import { PageNotFoundComponent } from './components/page-not-found.component';
 
-const COMPONENTS = [ToolbarComponent, MessagesComponent];
-const MODULES = [FlexLayoutModule, MaterialModule, AppRoutingModule];
+const COMPONENTS = [ToolbarComponent, MessagesComponent, PageNotFoundComponent];
+const MODULES = [FlexLayoutModule, MaterialModule, RouterModule];
 
 @NgModule({
   declarations: [COMPONENTS],
